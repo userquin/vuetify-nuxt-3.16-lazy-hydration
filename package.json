@@ -1,0 +1,44 @@
+{
+  "name": "nuxt-3.16-lazy-hydration",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "prepare": "nuxt prepare",
+    "typecheck": "nuxt typecheck",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "@nuxt/eslint": "1.2.0",
+    "@unhead/vue": "^2.0.0-rc.13",
+    "eslint": "^9.0.0",
+    "nuxt": "^3.16.0",
+    "unhead": "^2.0.0-rc.13",
+    "vue": "^3.5.13",
+    "vuetify": "^3.7.16"
+  },
+  "packageManager": "pnpm@10.6.3+sha512.bb45e34d50a9a76e858a95837301bfb6bd6d35aea2c5d52094fa497a467c43f5c440103ce2511e9e0a2f89c3d6071baac3358fc68ac6fb75e2ceb3d2736065e6",
+  "devDependencies": {
+    "@mdi/font": "^7.4.47",
+    "@nuxt/fonts": "^0.10.0",
+    "@nuxt/kit": "^3.16.0",
+    "@types/node": "^22.13.10",
+    "sass-embedded": "^1.80.3",
+    "typescript": "^5.6.3",
+    "unimport": "^4.1.2",
+    "upath": "^2.0.1",
+    "vue-tsc": "^2.1.6",
+    "vuetify-nuxt-module": "^0.18.3"
+  },
+  "pnpm": {
+    "overrides": {
+      "unhead": "^2.0.0-rc.13",
+      "@unhead/vue": "^2.0.0-rc.13"
+    }
+  }
+}

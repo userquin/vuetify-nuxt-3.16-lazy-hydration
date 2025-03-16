@@ -20,6 +20,8 @@ The `dev` branch using local Vuetify tgz file from Vuetify `dev` branch.
 
 The `dev-pr-21104` branch using local Vuetify tgz file from this Vuetify `dev` PR [fix:fix vuetify types and simplify package exports](https://github.com/vuetifyjs/vuetify/pull/21104).
 
+**NOTE**: when switching between branches, remember to run `pnpm install` to install the dependencies.
+
 ## Screenshots
 
 ![Vuetify Directives](./directives.png 'Nuxt devtools showing Vuetify directives')

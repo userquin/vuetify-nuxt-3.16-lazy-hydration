@@ -16,7 +16,7 @@ The `main` branch using Vuetify `v3.7.16` and Vuetify Nuxt Module `v0.18.4` incl
 - vuetify module to fix the `unhead v2` changes that breaks Vuetify styles
 - vite plugin to remove Vuetify Vite plugin registered by the Vuetify Nuxt mdoule
 
-The `dev` branch using local Vuetify tgz file from Vuetify `dev` branch: check [chore: use local Vuetify dev tgz](https://github.com/userquin/vuetify-nuxt-3.16-lazy-hydration/pull/1)
+The `dev` branch using local Vuetify tgz file from Vuetify `dev` branch: check [chore: use local Vuetify dev tgz](https://github.com/userquin/vuetify-nuxt-3.16-lazy-hydration/pull/1).
 
 The `dev-pr-21104` branch using local Vuetify tgz file from this Vuetify `dev` PR [fix:fix vuetify types and simplify package exports](https://github.com/vuetifyjs/vuetify/pull/21104): check [chore: use local Vuetify dev tgz from Vuetify #21104 PR](https://github.com/userquin/vuetify-nuxt-3.16-lazy-hydration/pull/2).
 

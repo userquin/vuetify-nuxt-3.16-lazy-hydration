@@ -33,7 +33,7 @@
     "unimport": "^4.1.2",
     "upath": "^2.0.1",
     "vue-tsc": "^2.1.6",
-    "vuetify-nuxt-module": "^0.18.3"
+    "vuetify-nuxt-module": "^0.18.4"
   },
   "pnpm": {
     "overrides": {

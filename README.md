@@ -1,75 +1,31 @@
-# Nuxt 3 Minimal Starter
+# Vuetify + Nuxt 3.16 + Vue Lazy Hydration
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This repository using Nuxt `components:extend` hook to register Vuetify components to allow use [Vue Lazy Hydration](https://blog.vuejs.org/posts/vue-3-5#lazy-hydration) (🤞 ) via [Nuxt Delayed Hydration Support](https://nuxt.com/blog/v3-16#%EF%B8%8F-delayed-hydration-support).
 
-## Setup
+Right now, [Nuxt Delayed Hydration Support](https://nuxt.com/blog/v3-16#%EF%B8%8F-delayed-hydration-support) is not working since Vuetify using `slots` almost on every component and will require a lot of work to make it work.
 
-Make sure to install the dependencies:
+This repository contains some code that will be included at Vuetify and Vuetify Nuxt module:
+- Vuetify will export composable and directive `unimport` presets 
+- Vuetify Nuxt Module will use previous Vuetify `unimport` presets and will use the logic in the auto-import module in this template to configure the Vuetify components.
 
-```bash
-# npm
-npm install
+To start the dev server, run from the terminal:
+- `pnpm install` to install dependencies
+- `pnpm dev` to start the dev server
 
-# pnpm
-pnpm install
+The `main` branch using Vuetify `v3.7.16` and Vuetify Nuxt Module `v0.18.4` and includes:
+- vuetify module to fix the `unhead v2` changes that breaks Vuetify styles
+- vite plugin to remove Vuetify Vite plugin registered by the Vuetify Nuxt mdoule
 
-# yarn
-yarn install
+The `dev` branch using local Vuetify tgz file from Vuetify `dev` branch.
 
-# bun
-bun install
-```
+The `dev-pr-21104` branch using local Vuetify tgz file from this Vuetify PR [fix:fix vuetify types and simplify package exports](https://github.com/vuetifyjs/vuetify/pull/21104).
 
-## Development Server
+## Screenshots
 
-Start the development server on `http://localhost:3000`:
+![Vuetify Directives](./directives.png 'Nuxt devtools showing Vuetify directives')
 
-```bash
-# npm
-npm run dev
+![VSCode and Vuetify Directives](./vscode-directives.png 'VSCode and Vuetify directives')
 
-# pnpm
-pnpm run dev
+![WebStorm and Vuetify Directives](./webstorm-directives.png 'WebStorm and Vuetify directives')
 
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+![Vuetify Nuxt Lazy Components](./lazy-components.png 'Vuetify Nuxt Lazy Components')

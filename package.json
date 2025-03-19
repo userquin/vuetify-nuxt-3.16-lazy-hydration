@@ -15,12 +15,10 @@
   },
   "dependencies": {
     "@nuxt/eslint": "1.2.0",
-    "@unhead/vue": "^2.0.0-rc.13",
     "eslint": "^9.0.0",
-    "nuxt": "^3.16.0",
-    "unhead": "^2.0.0-rc.13",
+    "nuxt": "^3.16.1",
     "vue": "^3.5.13",
-    "vuetify": "^3.7.16"
+    "vuetify": "file:vuetify-3.7.18.tgz"
   },
   "packageManager": "pnpm@10.6.3+sha512.bb45e34d50a9a76e858a95837301bfb6bd6d35aea2c5d52094fa497a467c43f5c440103ce2511e9e0a2f89c3d6071baac3358fc68ac6fb75e2ceb3d2736065e6",
   "devDependencies": {

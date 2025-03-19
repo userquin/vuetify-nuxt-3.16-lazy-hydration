@@ -20,6 +20,8 @@ The `dev` branch using local Vuetify tgz file from Vuetify `dev` branch: check [
 
 The `dev-pr-21104` branch using local Vuetify tgz file from this Vuetify `dev` PR [fix:fix vuetify types and simplify package exports](https://github.com/vuetifyjs/vuetify/pull/21104): check [chore: use local Vuetify dev tgz from Vuetify #21104 PR](https://github.com/userquin/vuetify-nuxt-3.16-lazy-hydration/pull/2).
 
+The `dev-pr-21129` branch using local Vuetify tgz file from this Vuetify `dev` PR [feat(package): add unimport presets and unplugin-vue-components resolvers](https://github.com/vuetifyjs/vuetify/pull/21129).
+
 **NOTE**: when switching between branches, remember to run `pnpm install` to install the dependencies.
 
 ## Screenshots
